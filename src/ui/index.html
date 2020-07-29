@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron & Mysql</title>
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="bg-red">
+        <main class="container-fluid bg-purlple-5">
+            <div class="row">
+                <div class="col-6 bg-purple">
+                    <div class="p-4 my-auto">
+                        <h3 class="text-white text-center">Controle de Estoque</h3>
+                        <form class="card card-body" id="productForm">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            placeholder="Teclado Externo" autofocus>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="provider" id="provider"
+                                            placeholder="JV Info">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basiaddon1">R$</span>
+                                </div>
+                                <input type="number" step="any" class="form-control money" name="price" id="price"
+                                    placeholder="2.00">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basiaddon1" title="Quantidade"><i class="fa fa-tags"></i></span>
+                                </div>
+                                <input type="number" class="form-control" name="amount" id="amount" placeholder="5">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="description" id="description" rows="5"
+                                    placeholder="Descreva seu produto..."></textarea>
+                            </div>
+                            <button class="btn btn-sm btn-outline-info"><i class="fa fa-paper-plane-o"></i> Gravar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="scrollH" id="products"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

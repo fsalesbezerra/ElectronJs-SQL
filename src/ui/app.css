@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+.bg-purple {
+    background-color: purple;
+}
+
+.bg-purlple-5 {
+    background-color: rgb(173, 28, 173);
+}
+
+#products {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2px;
+}
+
+
+.scrollH {
+    overflow-y: scroll; /* Add the ability to scroll */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollH::-webkit-scrollbar {
+      display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollH {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
